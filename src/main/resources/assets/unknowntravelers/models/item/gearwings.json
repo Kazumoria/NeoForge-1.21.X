@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generated",
   "textures":
   {
-    "layer0": "flymod:item/gearwings"
+    "layer0": "unknowntravelers:item/gearwings"
   }
 }
