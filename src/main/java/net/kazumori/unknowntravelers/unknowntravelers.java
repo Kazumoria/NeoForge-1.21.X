@@ -1,5 +1,6 @@
 package net.kazumori.unknowntravelers;
 
+import net.kazumori.unknowntravelers.block.ModBlocks;
 import net.kazumori.unknowntravelers.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -41,6 +42,7 @@ public class unknowntravelers
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -60,6 +62,12 @@ public class unknowntravelers
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.GEARWINGS);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.UNKNOWN_ARTIFACT);
+            event.accept(ModBlocks.NORDITE_ORE);
         }
 
     }

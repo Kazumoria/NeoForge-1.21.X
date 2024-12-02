@@ -1,5 +1,6 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
-  "block.examplemod.example_block": "Example Block",
-  "item.unknowntravelers.gearwings": "Gear Wings"
+  "item.unknowntravelers.gearwings": "Gear Wings",
+
+  "block.unknowntravelers.unknown_artifact": "Unknown Artifact",
+  "block.unknowntravelers.nordite_ore": "Nordite Ore"
 }
